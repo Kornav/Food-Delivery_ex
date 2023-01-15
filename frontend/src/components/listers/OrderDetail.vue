@@ -9,6 +9,9 @@
                 <String label="UserId" v-model="item.userId" :editMode="editMode" @change="change" />
             </div>
             <div>
+                <String label="OrderId" v-model="item.orderId" :editMode="editMode" @change="change" />
+            </div>
+            <div>
                 <String label="StoreId" v-model="item.storeId" :editMode="editMode" @change="change" />
             </div>
             <div>

@@ -68,6 +68,9 @@
             me.values = temp.data._embedded.notifications;
             
             me.newValue = {
+                'userId': '',
+                'storeId': '',
+                'status': '',
             }
         },
         methods:{
