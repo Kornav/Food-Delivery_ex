@@ -68,6 +68,7 @@
                 [
                     { text: "id", value: "id" },
                     { text: "userId", value: "userId" },
+                    { text: "orderId", value: "orderId" },
                     { text: "storeId", value: "storeId" },
                     { text: "menuId", value: "menuId" },
                     { text: "qty", value: "qty" },
@@ -90,6 +91,7 @@
 
             this.newValue = {
                 'userId': '',
+                'orderId': '',
                 'storeId': '',
                 'menuId': '',
                 'qty': '',

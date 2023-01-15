@@ -39,17 +39,6 @@
 
                     <v-list-item
                         class="px-2"
-                        key="searchMenus"
-                        to="searchMenus"
-                        @click="changeUrl()"
-                        color="deep-purple lighten-2"
-                        style="font-weight:700;"
-                    >
-                        SearchMenu
-                    </v-list-item>
-
-                    <v-list-item
-                        class="px-2"
                         key="storeOrders"
                         to="/storeOrders"
                         @click="changeUrl()"
@@ -86,16 +75,6 @@
                     </v-list-item>
 
 
-                    <v-list-item
-                        class="px-2"
-                        key="selectMenus"
-                        to="selectMenus"
-                        @click="changeUrl()"
-                        color="deep-purple lighten-2"
-                        style="font-weight:700;"
-                    >
-                        SelectMenu
-                    </v-list-item>
 
                     <v-list-item
                         class="px-2"
@@ -109,6 +88,16 @@
                     </v-list-item>
 
 
+                    <v-list-item
+                        class="px-2"
+                        key="orderStatuses"
+                        to="orderStatuses"
+                        @click="changeUrl()"
+                        color="deep-purple lighten-2"
+                        style="font-weight:700;"
+                    >
+                        OrderStatus
+                    </v-list-item>
 
 
                 </v-list>
@@ -121,36 +110,6 @@
             </v-container>
             <v-container v-else class="py-8 px-6 mt-10" fluid>
                 <v-row>
-
-                        <v-card
-                            class="mx-auto"
-                            style="height:300px; width:300px; margin-bottom:20px;"
-                            outlined
-                        >
-                            <v-list-item>
-                                <v-list-item-avatar 
-                                    class="mx-auto"
-                                    size="80"
-                                    style="margin-top:80px;"
-                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
-                                </v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
-                                <v-btn 
-                                    class="mx-auto"
-                                    outlined
-                                    rounded
-                                    key="searchMenus"
-                                    to="/searchMenus"
-                                    @click="changeUrl()"
-                                    color="deep-purple lighten-2"
-                                    style="font-weight:500; font-size:20px; padding:15px;"
-                                >
-                                    SearchMenu
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
                         <v-card
                             class="mx-auto"
                             style="height:300px; width:300px; margin-bottom:20px;"
@@ -274,35 +233,6 @@
                             </v-list-item>
 
                             <v-card-actions>
-                                <v-btn 
-                                    class="mx-auto"
-                                    outlined
-                                    rounded
-                                    key="selectMenus"
-                                    to="/selectMenus"
-                                    @click="changeUrl()"
-                                    color="deep-purple lighten-2"
-                                    style="font-weight:500; font-size:20px; padding:15px;"
-                                >
-                                    SelectMenu
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                        <v-card
-                            class="mx-auto"
-                            style="height:300px; width:300px; margin-bottom:20px;"
-                            outlined
-                        >
-                            <v-list-item>
-                                <v-list-item-avatar 
-                                    class="mx-auto"
-                                    size="80"
-                                    style="margin-top:80px;"
-                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
-                                </v-list-item-avatar>
-                            </v-list-item>
-
-                            <v-card-actions>
                                 <v-tooltip bottom>
                                     <template v-slot:activator="{ on }">
                                         <v-btn 
@@ -324,6 +254,35 @@
                             </v-card-actions>
                         </v-card>
 
+                        <v-card
+                            class="mx-auto"
+                            style="height:300px; width:300px; margin-bottom:20px;"
+                            outlined
+                        >
+                            <v-list-item>
+                                <v-list-item-avatar 
+                                    class="mx-auto"
+                                    size="80"
+                                    style="margin-top:80px;"
+                                ><span class="mdi mdi-apps" style="font-size:60px; color:#9575CD;"></span>
+                                </v-list-item-avatar>
+                            </v-list-item>
+
+                            <v-card-actions>
+                                <v-btn 
+                                    class="mx-auto"
+                                    outlined
+                                    rounded
+                                    key="orderStatuses"
+                                    to="/orderStatuses"
+                                    @click="changeUrl()"
+                                    color="deep-purple lighten-2"
+                                    style="font-weight:500; font-size:20px; padding:15px;"
+                                >
+                                    OrderStatus
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
                 </v-row>
             </v-container>
         </v-main>
